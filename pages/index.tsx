@@ -30,10 +30,8 @@ const Index: NextPage = () => {
   }, [dispatch, city])
 
   const handleTabChange = useCallback((index: number) => {
-    (async () => {
-      const cities = Object.keys(CITIES)
-      setCity(cities[index])
-    })()
+    const cities = Object.keys(CITIES)
+    setCity(cities[index])
   }, [])
 
   const handleCalendarChange = useCallback((dt: Date) => {
