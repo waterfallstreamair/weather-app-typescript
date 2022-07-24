@@ -8,7 +8,7 @@ export interface WeatherState {
 }
 
 const initialState: WeatherState = {
-  lastUpdate: moment().unix(),
+  lastUpdate: 0,
   data: null,
 }
 
